@@ -21,11 +21,7 @@ export default function RootLayout({
       <body data-theme="winter" className={inter.className}>
         <NavBar />
         <main className='p-5'>
-          {/* <Suspense fallback={
-            <p>Loading...</p>
-          }> */}
           {children}
-          {/* </Suspense> */}
         </main>
       </body>
     </html>
