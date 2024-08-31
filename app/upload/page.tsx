@@ -20,6 +20,11 @@ const UploadPage = () => {
             {publicId && <CldImage src={publicId} width={270} height={180} alt='Uploaded Image' />}
             <CldUploadWidget
                 uploadPreset='fklwbau8'
+                options={{
+                    sources: ['local'],
+                    multiple: false,
+                    maxFiles: 5,
+                }}
                 onSuccess={handleSuccess}
                 onError={(error) => console.error('Upload error:', error)}
             >
